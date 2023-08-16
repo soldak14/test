@@ -131,7 +131,7 @@ const App: FC = () => {
     <Layout>
       <Header />
       <Routes>
-        <Route path={ROUTE.HOME} element={<HomePage
+        <Route index path={ROUTE.HOME} element={<HomePage
           allApartaments={allApartaments}
           addItem={addItem}
           deleteItem={deleteItem} />}

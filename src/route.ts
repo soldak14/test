@@ -1,5 +1,5 @@
 export enum ROUTE {
-    HOME = '/myapartaments',
+    HOME = '/',
     USER = '/user',
     APARTAMENT = '/apartament/:id',
 }
