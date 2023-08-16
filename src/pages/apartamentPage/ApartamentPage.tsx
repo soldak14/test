@@ -24,7 +24,7 @@ const ApartamentPage: FC = () => {
             <Link className={styles.link} to={ROUTE.HOME}>Back Home</Link>
             <div className={styles.item}>
                 <div className={styles.imgWrapper}>
-                    <img src={process.env.PUBLIC_URL + thisProduct?.img} alt="img" />
+                    <img src={thisProduct?.img} alt="img" />
                 </div>
                 <div>
                     <h2>
