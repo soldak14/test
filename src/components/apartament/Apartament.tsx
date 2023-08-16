@@ -17,7 +17,7 @@ const Apartament: FC<ApartamentPropsType> = ({ apartament, addItem, deleteItem }
             <Link to={`/apartament/${apartament.id}`}>
                 <div className={styles.wrapper}>
                     <div>
-                        <img src={process.env.PUBLIC_URL + apartament.img} alt="img" />
+                        <img src={apartament.img} alt="img" />
                     </div>
                     <div>
                         <h2 className={styles.title}>{apartament.apartamentName}</h2>
