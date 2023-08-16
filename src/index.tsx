@@ -3,12 +3,13 @@ import { BrowserRouter } from 'react-router-dom'
 
 import './index.scss'
 import App from './App'
+import { ROUTE } from './route'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={ROUTE.HOME}>
     < App />
   </ BrowserRouter>
 )
