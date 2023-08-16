@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.da512019.css",
+    "main.js": "/test/static/js/main.d26eacfd.js",
+    "static/media/apartament_3.jpg": "/test/static/media/apartament_3.70938c48e8f22b1fb779.jpg",
+    "static/media/apartament_2.jpg": "/test/static/media/apartament_2.011ef6d51f2978192545.jpg",
+    "static/media/apartament_4.jpg": "/test/static/media/apartament_4.79313c4a69f7d66b2783.jpg",
+    "static/media/apartament_1.jpg": "/test/static/media/apartament_1.92e8b0ebb310180c1ed4.jpg",
+    "index.html": "/test/index.html",
+    "main.da512019.css.map": "/test/static/css/main.da512019.css.map",
+    "main.d26eacfd.js.map": "/test/static/js/main.d26eacfd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da512019.css",
+    "static/js/main.d26eacfd.js"
+  ]
+}
