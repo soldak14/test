@@ -1,0 +1,11 @@
+@import "../../index.scss";
+
+.button {
+    border: 1px solid black;
+    @include adaptive-value("font-size", 18, 12, 1);
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+    &:hover {
+        background-color: #5e5656;
+    }
+}

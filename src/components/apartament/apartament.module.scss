@@ -1,0 +1,24 @@
+@import "../../index.scss";
+
+.apartament {
+    border-radius: 3px;
+    padding: 4px;
+    background-color: $secondBg;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        @include adaptive-value("gap", 10, 5, 1);
+        .title {
+            @include adaptive-value("font-size", 25, 15, 1);
+        }
+        img {
+            width: 100%;
+            height: 260px;
+        }
+    }
+    .button {
+        @include adaptive-value("margin-top", 12, 5, 1);
+        display: flex;
+        gap: 5px;
+    }
+}

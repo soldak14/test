@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+$fontFamily: "inter";
+$fontSize: 16px;
+$mainColorText: rgb(227, 230, 233);
+$secondBg: rgb(90, 91, 136);
+$maxWidth: 1600px;
+$minWidth: 320px;
+$maxWidthContainer: 1400px;
+$containerPadding: 30px;
+
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+body {
+  font-family: $fontFamily;
+  background-color: white;
+  font-weight: 400;
+}
+$max_Width: 1600;
+$max_Width_Container: 1400;
+
+@mixin adaptive-value($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+
+  @if $type==1 {
+    #{$property}: $startSize + px;
+
+    @media (max-width: #{$max_Width_Container + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$max_Width_Container - 320}));
+    }
+  } @else if $type==2 {
+    #{$property}: $startSize + px;
+
+    @media (min-width: #{$max_Width_Container + px}) {
+      #{$property}: calc(#{$minSize + px} #{$addSize} * ((100vw - 320px) / #{$max_Width - 320}));
+    }
+  } @else {
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$max_Width - 320}));
+  }
+}

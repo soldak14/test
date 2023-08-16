@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+.link {
+    display: inline-block;
+    @include adaptive-value("font-size", 20, 10, 1);
+    background-color: rgb(140, 144, 150);
+    padding: 0.5em;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    &:hover {
+        background-color: rgb(92, 78, 78);
+    }
+}
+.item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 40px;
+    @media (max-width: 940px) {
+        flex-direction: column;
+    }
+    .imgWrapper {
+        max-width: 800px;
+        @media (width: 940px) {
+            max-width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

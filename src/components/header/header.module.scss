@@ -1,0 +1,27 @@
+@import "../../index.scss";
+.header {
+    background-color: $secondBg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    @include adaptive-value("padding", 30, 15, 1);
+    margin-bottom: 20px;
+    .logo {
+        @include adaptive-value("font-size", 45, 20, 1);
+        color: rgb(47, 32, 71);
+        flex: 3;
+    }
+    .list {
+        flex: 1;
+        display: flex;
+        @include adaptive-value("gap", 100, 10, 1);
+        .item {
+            @include adaptive-value("font-size", 20, 15, 1);
+        }
+    }
+    .active {
+        color: rgb(109, 40, 80);
+        text-decoration: underline;
+    }
+}
